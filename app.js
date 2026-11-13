@@ -49,9 +49,9 @@ const icon = (n, s = 22, sw = 2) => `<svg width="${s}" height="${s}" viewBox="0 
 /* ===== Catalog (edit prices and copy to match your store) ===== */
 const IMGPOS = { hand: '50% 42%', open: '56% 50%', board: '84% 50%' };
 const PRODUCTS = [
-  { id: 'turmeric-soap', name: 'Turmeric Soap', tagline: 'For melanin-rich skin', price: 16.00, size: '50 g / 1.76 oz', variants: ['Original'], imgs: ['hand', 'open', 'board'], best: true,
+  { id: 'turmeric-soap', name: 'Turmeric Soap', tagline: 'For melanin-rich skin', price: 16.00, size: '75 g / 2.65 oz', variants: ['Original'], imgs: ['hand', 'open', 'board'], best: true,
     blurb: 'A turmeric soap bar made for melanin-rich skin and your routine for dark spots.',
-    bullets: ['No bleaching agents', '100% natural', 'Sulfate free', '50 g bar in a paper tube'],
+    bullets: ['No bleaching agents', '100% natural', 'Sulfate free', '75 g bar in a twist-up plastic tube'],
     use: 'Wet the bar and your skin, then lather and massage gently for about 30 seconds. Rinse well and pat dry. Use once or twice a day, follow with moisturizer and wear sunscreen in the daytime. Patch test before first use.',
     ing: 'Add your full ingredient list here.' }
 ];
@@ -164,7 +164,7 @@ function viewHome() {
   const row = tick.map(t => `<span>${icon(t[1], 28)}${t[0]}</span>`).join('');
   const goals = [['Shop Turmeric Soap', '#p-' + MAIN, 'hand', '50% 40%'], ['Build a Set', '#bundle-builder', 'board', '88% 50%'], ['Find Your Ritual', '#quiz', 'open', '58% 50%'], ['Try a Ritual', '#rituals', 'hand', '30% 70%']];
   const learn = [['Understanding dark spots', 'What causes them and the habits that help.', '#post-understanding-dark-spots', 'hand', '50% 40%'], ['How to use turmeric soap', 'Four simple steps for your routine.', '#post-how-to-use-turmeric-soap', 'open', '56% 50%'], ['Skincare habits that last', 'Five small habits for melanin-rich skin.', '#post-melanin-rich-skincare-habits', 'board', '86% 50%'], ['An evening wind-down', 'A five-minute ritual to end the day.', '#ritual-evening-wind-down', 'hand', '30% 70%']];
-  const badges = [['No bleaching', 'flask'], ['100% natural', 'leaf'], ['Sulfate free', 'drop'], ['For melanin-rich skin', 'heart'], ['Paper tube', 'box']];
+  const badges = [['No bleaching', 'flask'], ['100% natural', 'leaf'], ['Sulfate free', 'drop'], ['For melanin-rich skin', 'heart'], ['Twist-up tube', 'box']];
   const vids = [['hand', '50% 40%'], ['open', '56% 50%'], ['board', '86% 50%']];
   return `
   <section class="hero"><div class="hero-in">
